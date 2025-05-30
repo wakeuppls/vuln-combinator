@@ -51,13 +51,13 @@ python vulncombinator.py --vuln XSS --reverse
 Сохранить результат в файл:
 
 ```bash
-python vulncombinator.py --vuln XSS --reverse --output results.txt
+python vulncombinator.py --vuln XSS --reverse --export results.txt
 ```
 
 Рассчитать комбинированный риск:
 
 ```bash
-python vulncombinator.py --risk --r1 7.2 --r2 5.0 --c 1.3
+python vulncombinator.py --risk 7.2 5.0 1.3
 ```
 
 ---
@@ -78,7 +78,7 @@ python vulncombinator.py --risk --r1 7.2 --r2 5.0 --c 1.3
 
 ### Экспорт результатов
 
-Флаг `--output <file>` позволяет сохранить найденные комбинации в текстовый файл.
+Флаг `--export <file>` позволяет сохранить найденные комбинации в текстовый файл.
 
 ---
 
