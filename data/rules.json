@@ -1,0 +1,101 @@
+[
+    {
+        "base_vuln": "XSS",
+        "combined_with": [
+            "CSRF"
+        ],
+        "goal": "Account takeover",
+        "risk_score": 8.5,
+        "description": "Use XSS to inject a malicious form that exploits CSRF for unauthorized actions."
+    },
+    {
+        "base_vuln": "SQLi",
+        "combined_with": [
+            "File Upload"
+        ],
+        "goal": "Remote Code Execution",
+        "risk_score": 9.0,
+        "description": "Exploit SQLi to gain admin access and then upload a malicious web shell."
+    },
+    {
+        "base_vuln": "SSRF",
+        "combined_with": [
+            "LFI"
+        ],
+        "goal": "Access internal files",
+        "risk_score": 8.0,
+        "description": "Use SSRF to access LFI endpoint and read sensitive system files."
+    },
+    {
+        "base_vuln": "IDOR",
+        "combined_with": [
+            "Privilege Escalation"
+        ],
+        "goal": "Unauthorized data access",
+        "risk_score": 7.5,
+        "description": "Exploit IDOR to access data, then escalate privileges to access admin endpoints."
+    },
+    {
+        "base_vuln": "Open Redirect",
+        "combined_with": [
+            "Phishing"
+        ],
+        "goal": "Credential theft",
+        "risk_score": 6.5,
+        "description": "Use Open Redirect to lure users into a phishing page."
+    },
+    {
+        "base_vuln": "Command Injection",
+        "combined_with": [
+            "Insecure Deserialization"
+        ],
+        "goal": "Full system compromise",
+        "risk_score": 9.5,
+        "description": "Deserialize untrusted input leading to command execution."
+    },
+    {
+        "base_vuln": "XSS",
+        "combined_with": [
+            "Session Fixation"
+        ],
+        "goal": "Session takeover",
+        "risk_score": 8.0,
+        "description": "Inject script to set a predefined session and hijack it."
+    },
+    {
+        "base_vuln": "CSRF",
+        "combined_with": [
+            "Insecure Direct Object Reference"
+        ],
+        "goal": "Unauthorized state change",
+        "risk_score": 7.0,
+        "description": "CSRF changes user settings via exposed IDOR endpoint."
+    },
+    {
+        "base_vuln": "Directory Traversal",
+        "combined_with": [
+            "File Upload"
+        ],
+        "goal": "Upload shell outside intended directory",
+        "risk_score": 8.0,
+        "description": "Bypass upload directory with traversal payload."
+    },
+    {
+        "base_vuln": "JWT None Algorithm",
+        "combined_with": [
+            "Session Replay"
+        ],
+        "goal": "Unauthorized session reuse",
+        "risk_score": 7.5,
+        "description": "Exploit JWT algorithm flaw and replay session token."
+    },
+    {
+        "base_vuln": "Insecure Deserialization",
+        "combined_with": [
+            "Privilege Escalation"
+        ],
+        "goal": "Gain admin privileges",
+        "risk_score": 9.0,
+        "description": "Craft payload to execute privileged function on deserialization."
+    }
+]
