@@ -8,7 +8,6 @@ def parse_args():
     parser.add_argument('--vuln', type=str, help="Указать уязвимость для анализа")
     parser.add_argument('--reverse', action='store_true', help="Искать обратные комбинации")
     parser.add_argument('--export', type=str, help="Сохранить результат в файл")
-    parser.add_argument('--full-graph', action='store_true', help="Анализировать длинные цепочки")
     parser.add_argument('--risk', nargs=3, type=float, metavar=('R1', 'R2', 'C'),
                         help="Рассчитать итоговую критичность для пары уязвимостей и коэффициента усиления")
     return parser.parse_args()

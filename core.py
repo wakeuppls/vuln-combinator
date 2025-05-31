@@ -17,7 +17,7 @@ def find_combinations(vuln, rules, reverse=False):
 def export_results(results, filename):
     with open(filename, "w") as f:
         for r in results:
-            f.write(json.dumps(r, indent=4) + "\\n")
+            f.write(json.dumps(r, indent=4) + ",")
 
 def calculate_combination_risk(R1: float, R2: float, C: float) -> float:
     R1 = min(max(R1, 0), 10)
